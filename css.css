@@ -1,0 +1,573 @@
+html{
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Pompadur; /* Имя шрифта */
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
+   }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: rgb(218, 217, 210);
+    min-height: 200px;
+    min-width: 300px;
+    align-items: center;  
+    font-family: Pompadur;
+}
+header{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin: 60px 60px 0 160px;
+    border-radius: 0px;
+    
+}
+.logo{
+    height: 87px;
+    width: 160px;
+    border-radius: 0px;
+} 
+.menu{
+display: flex;
+}
+ul{
+    list-style-type: none;
+    margin-left: 100px;
+    padding: 0;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+li{
+    float: left;
+}
+li a {
+    display: block;
+    color: rgb(119, 114, 114);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  
+    font-family: Pompadur;
+font-size: 13px;
+font-weight: 300;
+line-height: 16px;
+letter-spacing: 0.05em;
+text-align: left;
+
+}
+.mfirst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+border: 1px solid red;
+font-family: Pompadur;
+font-size: 13px;
+font-weight: 700;
+line-height: 16px;
+
+
+height: 29px;
+width: 88px;
+border-radius: 0px;
+border: 1px solid rgba(209, 169, 84, 0.9);
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+}
+
+.msecond{
+    border: 1px solid green;
+}
+
+
+.dropup{
+    display: flex;
+   flex-direction: column;
+  
+ 
+}
+
+
+#menu_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50px;
+    height: 20px;
+    background: transparent ;
+    border-width: 2px 0 2px 0;
+    border-color: #000;
+   margin: 0;
+   padding: 0;
+}
+
+.menu_btn_content{
+    display: none;
+}
+
+.menu_btn_content a{
+    display: flex;
+    /* position: relative; */
+    /* height: auto; */
+}
+.dropup:hover 
+.menu_btn_content{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;   
+}
+
+
+#menu_btn hr{
+    width: 98%;
+    border-width: 1px;
+    size: "0";
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    border-color: #000;
+}
+
+
+.line-between-1-2{
+    border: 1px solid black;
+    width: 100px;
+    align-self: center;
+}
+br{
+    align-self: center;
+    width: 500px;
+    size: 2;
+    color: #000;
+}
+.slides{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.slide_menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.slide_menu_item {
+    min-width: 20px;
+    background: rgb(85, 78, 78);
+    margin: 5px;
+    height: 0px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#slide_after a {
+    
+    background: rgb(85, 78, 78);
+    margin: 5px;
+    
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.slider img {
+    height: 650px;
+    width: 580px;
+    border-radius: 0px;
+    margin: 10px;
+    border-radius: 0px;
+}
+
+.pro_restoran{
+    display: flex;
+    flex-direction: column;
+  width: 50%;
+   justify-content: center;
+    align-items: center;
+}
+.pro_restoran .logo{
+    width: 100px;
+}
+.pro_restoran .logo img{
+    width: 100%;
+    
+}
+
+h1 {
+    font-family: monserat;
+    font-weight: 100;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: monserat;
+    }
+
+h3 {
+font-family: monserat;
+font-weight: 200;
+
+}
+h4{
+    text-transform: uppercase;
+}
+
+
+
+.about_restoran img{
+   
+width: 920px;
+height: 481.03px;
+
+background: url(F_a7lbJ6b-k.jpg), #C4C4C4;
+border: 10px solid #FFFFFF;
+box-sizing: border-box;
+box-shadow: 0px 0px 30px rgba(126, 126, 126, 0.25);
+}
+
+.pro_restoran_info{
+    display: flex;
+    flex-direction: row; 
+    width: 1000px; 
+   
+}
+
+
+.pro_restoran_info_left{
+width: 50%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 0px;
+padding: 0 30px 0 0;
+}
+
+.pro_restoran_info_left .logo{
+    width: 202.79px;
+    height: 110.47px;
+
+}
+
+.pro_restoran_info_data p{
+    font-size: 1rem;    
+    border-radius: null px;
+}
+h4{
+    font-weight: 300;
+    margin: 0;
+}
+
+.pro_restoran_info_right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px;
+    }
+    .pro_restoran_info_right_up{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        border-radius: 0px;
+    }
+
+    .pro_restoran_info_right_down{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        border-radius: 0px;
+    }
+
+    .pro_restoran_info_right_item{
+        width: 100%;
+        height: 207px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0px;
+    }
+
+    .pro_restoran_info_right_item_title{
+        width: 100%;
+        height: 42px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        border-radius: 0px;
+       
+        
+    }
+    
+    .pro_restoran_info_right_item_logo{
+        margin: 0 5% 0 0;
+         height: 45px;    
+    }
+    .pro_restoran_info_right_item_logo img{
+        width: 43px;
+         height: 38px;    
+    }
+
+
+.galery{
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: center;
+    align-content: center; */
+}
+
+.galery_up{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.galery_up_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+    height: 300px;
+}
+.galery_up_logo img{
+    width: 46px;
+height: 30px;
+}
+
+
+#galery-0{
+    width: 46px;
+    height: 30px;
+}
+#galery-1{
+    width: 445px;
+    height: 300px;
+    margin: 15px;
+}
+#galery-2{
+    width: 350px;   
+    height: 300px;
+    margin: 15px ;
+}
+
+.galery_down{
+    display: flex;
+    flex-direction: row;
+    
+}
+.galery_down_l{
+    display: flex;
+    flex-direction: row;
+   
+}
+.galery_down_r{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+#galery-3{
+    width: 635px;
+    height: 630px;
+    margin: 15px ;
+}
+
+#galery-4{
+    width: 445px;
+height: 300px;
+margin: 15px ;
+margin: 15px ;
+}
+#galery-5{
+    width: 445px;
+height: 300px;
+margin: 15px ;
+margin: 15px ;
+}
+
+
+
+
+.know_more{
+    width: 1900px;
+    height: 300px;
+  background: url(img/4-1.png);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.know_more_title p{
+    color: white;
+}
+.know_more_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#know_more_button_plan, #know_more_button_presentation{
+    background-color: white;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+ .back_form{
+    display: flex;
+    
+   
+} 
+
+.back_form, .back_form_left, .back_form_left_blok{
+    padding: 10px;
+
+}
+
+.back_form_left{
+    width: 550px;
+   
+}
+.back_form_left h1{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.back_form_left h2{
+    font-size: 16px;
+    font-weight: 300;
+}
+.back_form_left_conteiner{
+    display: flex;
+    
+}
+.back_form_left_restoran{
+    display: flex;
+    flex-direction: column;
+}
+
+.back_form_left_blok{
+    display: flex;
+    align-items: center;
+   
+   
+}
+.back_form_left_blok img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+
+}
+.back_form_left_blok p{
+    font-size: 14px;
+}
+
+.back_form_right{
+    display: flex;
+    flex-direction: column;
+}
+#back_form_btn{
+    width: 100px;
+    background-color: gold;
+}
+
+.our_instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our_instagram h2{
+    width: 356px;
+    height: 52px;
+       /* h2 */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 145%;
+     /* or 52px */
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    
+    color: #222222; 
+}
+
+
+.our_instagram img{
+   width: 46px;
+height: 30px; 
+}
+
+.our_inst_foto{
+    display: flex;
+    
+}
+.our_inst_foto img{
+width: 320px;
+height: 304px;
+background: url(qTrSgn3u9H0.jpg), #C4C4C4;  
+}
+footer{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.swiper-container {
+    height: 650px;
+    width: 1740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 200px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prog01</title>
+    <link rel="stylesheet" href="css.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper.min.css">
+    <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+
+            <ul>
+                <li class="mfirst">
+                    <a href="">ГОЛОВНА</a>
+                </li>
+                <li><a href="">SOFT EVENT HOUSE</a></li>
+                <li><a href="">ЗАХОДИ</a></li>
+                <li><a href="">ТУРИСТАМ</a></li>
+                <li><a href="">КЕЙТЕРИНГ</a></li>
+                <li><a href="">ДЛЯ АГЕНСТВ</a></li>
+            </ul>
+
+            <div class="dropup">
+                <button id="menu_btn">
+                    <hr>
+                </button>
+                <div class="menu_btn_content">
+                    <a href="#">link1</a>
+                    <a href="#">link2</a>
+                    <a href="#">link3</a>
+                </div>
+            </div>
+
+
+
+
+
+        </header>
+
+
+
+
+        <div class="line-between-1-2"> </div>
+        <br>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/blok02-1.png" alt="slide1"> </div>
+                <div class="swiper-slide"><img src="img/blok02-2.png" alt="slide2"></div>
+                <div class="swiper-slide"><img src="img/blok02-3.jpg" alt="slide3"></div>
+                <div class="swiper-slide"><img src="img/blok02-1.png" alt="slide1"> </div>
+                <div class="swiper-slide"><img src="img/blok02-2.png" alt="slide2"></div>
+                <div class="swiper-slide"><img src="img/blok02-3.jpg" alt="slide3"></div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                slidesPerColumn: 1,
+                slidesPerColumnFill: "row",
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+
+        <div class="pro_restoran">
+
+            <h3>
+                ПРО РЕСТОРАН
+            </h3>
+
+
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+
+            <div class="about_restoran">
+                <img src="img/about_restoran.png" alt="restoran table">
+            </div>
+
+            <div class="pro_restoran_info">
+                <div class="pro_restoran_info_left">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <h4>
+                        Добро пожаловать в Летний Дворец!
+                    </h4>
+
+                    <p>
+                        Добро пожаловать в Летний Дворец!
+
+                        Всего в 12 километрах от Петербурга, неподалеку от знаменитых фонтанов и парков Петергофа
+                        воплощен в жизнь один из самых грандиозных проектов event-индустрии России – ресторанный
+                        комплекс «Летний Дворец». Открытый в 2009 году, он объединил под одной крышей современный
+                        банкетный зал в исторических дворцовых интерьерах на 800 гостей и собственный кейтеринг.
+                    </p>
+
+                </div>
+                <div class="pro_restoran_info_right">
+
+                    <div class="pro_restoran_info_right_up">
+                        <div class="pro_restoran_info_right_item">
+
+                            <div class="pro_restoran_info_right_item_title">
+
+                                <div class="pro_restoran_info_right_item_logo">
+                                    <img src="img/descr1.png" alt="mini restoran">
+                                </div>
+                                <h4>
+                                    площадка
+                                </h4>
+                            </div>
+                            <div class="pro_restoran_info_data">
+                                <p>
+                                    Сочетание классических интерьеров и современных технических возможностей выгодно
+                                    отличают Летний Дворец от большинства других исторических площадок города.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pro_restoran_info_right_item">
+
+                            <div class="pro_restoran_info_right_item_title">
+                                <div class="pro_restoran_info_right_item_logo">
+                                    <img src="img/descr2.png" alt="mini table">
+                                </div>
+                                <h4>
+                                    технологии
+                                </h4>
+                            </div>
+
+                            <div class="pro_restoran_info_data">
+                                <p>
+                                    Возможности «Летнего Дворца» практически безграничны с точки зрения проведения
+                                    мероприятий самого разного формата и масштаба.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pro_restoran_info_right_down">
+                        <div class="pro_restoran_info_right_item">
+
+                            <div class="pro_restoran_info_right_item_title">
+                                <div class="pro_restoran_info_right_item_logo">
+                                    <img src="img/descr3.png" alt="mini lamp">
+                                </div>
+                                <h4>
+                                    интерьеры
+                                </h4>
+                            </div>
+
+                            <div class="pro_restoran_info_data">
+                                <p>
+                                    Изысканное внутреннее убранство Летнего Дворца — тонко выполненная стилизация с
+                                    использованием традиционных технологий и материалов — мрамора, бронзового литья.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="pro_restoran_info_right_item">
+
+                            <div class="pro_restoran_info_right_item_title">
+                                <div class="pro_restoran_info_right_item_logo">
+                                    <img src="img/descr4.png" alt="mini gears">
+                                </div>
+                                <h4>
+                                    оборудование
+                                </h4>
+                            </div>
+
+                            <div class="pro_restoran_info_data">
+                                <p>
+                                    Установлен комплект самого современного звукового оборудования, который приятно
+                                    удивит даже знатока качественного звука.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="galery">
+            <div class="galery_up">
+                <div class="galery_up_logo">
+                    <p>Галерея</p>
+                    <img id="galery-0" src="img/descr1.png" alt="mini restoran">
+                    <p>Літній дворець</p>
+                </div>
+
+
+                <img id="galery-1" src="img/3-1.png" alt="hall 1">
+                <img id="galery-2" src="img/3-2.png" alt="hall 2">
+            </div>
+
+            <div class="galery_down">
+
+                <div class="galery_down_l">
+                    <img id="galery-3" src="img/3-4.png" alt="restoran table">
+                </div>
+                <div class="galery_down_r">
+                    <img id="galery-4" src="img/3-3.png" alt="fassion people">
+                    <img id="galery-5" src="img/3-5.png" alt="food">
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+        <div class="know_more">
+            <div class="know_more_title">
+                <p>
+                    УЗНАЙТЕ О НАС БОЛЬШЕ
+                </p>
+            </div>
+            <div class="know_more_buttons">
+                <input type="button" id="know_more_button_plan" value="скачать план">
+                <input type="button" id="know_more_button_presentation" value="скачать презентацию">
+
+            </div>
+
+        </div>
+
+
+        <div class="back_form">
+            <div class="back_form_left">
+                <h1>
+                    Хочете провести захід
+                </h1>
+
+
+                <h2>
+                    Чи у вас залишились питання на які ми можемо дати відповідь в процесі розмови - напишіть нам. Ми
+                    відкриті для спілкування
+                </h2>
+
+
+                <div class="back_form_left_conteiner">
+                    <div class="back_form_left_restoran">
+                        <p>
+                            Ресторан
+                        </p>
+
+                        <div class="back_form_left_blok">
+
+                            <img src="img/placeholder.png" alt="placeholder">
+
+                            <p>
+                                Сан-Петербуржське шосе, буд 130, кв 7
+                            </p>
+
+                        </div>
+
+                        <div class="back_form_left_blok">
+
+                            <img src="img/smartphone.png" alt="smartphone">
+
+                            <p>
+                                +7(812) 210 67 95
+                            </p>
+
+                        </div>
+
+                        <div class="back_form_left_blok">
+
+                            <img src="img/mail.png" alt="mail">
+
+                            <p>
+                                hello@summerpalace.ru
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                    <div class="back_form_left_office">
+                        <p>
+                            Офіс
+                        </p>
+
+                        <div class="back_form_left_blok">
+
+                            <img src="img/placeholder.png" alt="placeholder">
+
+                            <p>
+                                ст.м.Лиговський проспект, вул.Черняховського, буд 75
+                            </p>
+
+                        </div>
+
+                        <div class="back_form_left_blok">
+
+                            <img src="img/smartphone.png" alt="smartphone">
+
+                            <p>
+                                +7(812) 210 67 95
+                            </p>
+
+                        </div>
+
+                        <div class="back_form_left_blok">
+
+                            <img src="img/mail.png" alt="mail">
+
+                            <p>
+                                hello@summerpalace.ru
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back_form_right">
+
+                <p>Ваше імя</p>
+                <input size="70px" type="text">
+
+                <p>Ваш емейл</p>
+                <input size="70px" type="email">
+
+                <p>Повідомлення</p>
+                <textarea placeholder="Повідомлення" name="text_area" id="my_text_area" cols="60" rows="10"></textarea>
+
+                <input id="back_form_btn" value="Відправити" type="button">
+
+            </div>
+        </div>
+
+
+        <div class="our_instagram">
+            <h2>
+                наш instagram
+            </h2>
+
+            <img src="img/logo.png" alt="logo">
+
+            <div class="our_inst_foto">
+                <img src="img/5-1.png" alt="restoran hall 1">
+                <img src="img/5-2.png" alt="restoran hall 2">
+                <img src="img/5-1.png" alt="restoran hall 1">
+                <img src="img/5-2.png" alt="restoran hall 2">
+                <img src="img/5-1.png" alt="restoran hall 1">
+                <img src="img/5-2.png" alt="restoran hall 2">
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                Copyright (с) 2019 Ресторан “Летний дворец”
+            </p>
+            <p>
+                Facebook — Vkontakte — Instagram
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
