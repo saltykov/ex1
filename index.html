@@ -9,8 +9,17 @@
     <link rel="stylesheet" href="css.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="swiper.min.css">
-    <!-- Swiper JS -->
-    <script src="swiper.min.js"></script>
+    
+    <!-- <link rel="stylesheet" href="swiper-bundle.css"> -->
+    <!-- <link rel="stylesheet" href="swiper.scss"> -->
+<!--   
+    <script src="swiper.min.js"></script> -->
+    <script src="swiper.js"></script>
+    <!-- <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+
+    
 </head>
 
 <body>
@@ -43,56 +52,64 @@
                     <a href="#">link3</a>
                 </div>
             </div>
-
-
-
-
-
         </header>
-
-
-
 
         <div class="line-between-1-2"> </div>
         <br>
 
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/blok02-1.png" alt="slide1"> </div>
-                <div class="swiper-slide"><img src="img/blok02-2.png" alt="slide2"></div>
-                <div class="swiper-slide"><img src="img/blok02-3.jpg" alt="slide3"></div>
-                <div class="swiper-slide"><img src="img/blok02-1.png" alt="slide1"> </div>
-                <div class="swiper-slide"><img src="img/blok02-2.png" alt="slide2"></div>
-                <div class="swiper-slide"><img src="img/blok02-3.jpg" alt="slide3"></div>
+
+        <div class="wrapper">
+           <div class="image-slider swiper-container">
+            <div class="image-slider_wrapper swiper-wrapper">
+               
+                <div class="image-slider_slide swiper-slide">
+                    <div class="image-slider_image">
+                        <img src="img/blok02-1.png" alt="slide1"> 
+                    </div>
+                </div>
+                <div class="image-slider_slide swiper-slide">
+                    <div class="image-slider_image">
+                        <img src="img/blok02-2.png" alt="slide2"> 
+                    </div>
+                </div>
+                <div class="image-slider_slide swiper-slide">
+                    <div class="image-slider_image">
+                        <img src="img/blok02-3.jpg" alt="slide3"> 
+                    </div>
+                </div>
+                <div class="image-slider_slide swiper-slide">
+                    <div class="image-slider_image">
+                        <img src="img/blok02-1.png" alt="slide4"> 
+                    </div>
+                </div>
+                <div class="image-slider_slide swiper-slide">
+                    <div class="image-slider_image">
+                        <img src="img/blok02-2.png" alt="slide5"> 
+                    </div>
+                </div>
+                <div class="image-slider_slide swiper-slide">
+                    <div class="image-slider_image">
+                        <img src="img/blok02-3.jpg" alt="slide6"> 
+                    </div>
+                </div>
 
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
-
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+            <div class="swiper-progressbar"></div>
+        </div> 
         </div>
+        
 
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 3,
-                slidesPerColumn: 1,
-                slidesPerColumnFill: "row",
-                spaceBetween: 30,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-            });
-        </script>
+
+
 
         <div class="pro_restoran">
-
             <h3>
                 ПРО РЕСТОРАН
             </h3>
-
 
             <div class="logo">
                 <img src="img/logo.png" alt="logo">
@@ -346,14 +363,20 @@
             </div>
             <div class="back_form_right">
 
-                <p>Ваше імя</p>
-                <input size="70px" type="text">
+                <label for="your_name">
+                    Ваше імя
+                </label>
+                <input id="your_name" size="70px" type="text">
 
-                <p>Ваш емейл</p>
-                <input size="70px" type="email">
+                <label for="your_email">
+                    Ваш емейл
+                </label>
 
-                <p>Повідомлення</p>
-                <textarea placeholder="Повідомлення" name="text_area" id="my_text_area" cols="60" rows="10"></textarea>
+                <input id="your_email" size="70px" type="email">
+
+               
+
+                <textarea placeholder="Повідомлення" name="text_area" id="your_text_area" cols="60" rows="10"></textarea>
 
                 <input id="back_form_btn" value="Відправити" type="button">
 
@@ -386,6 +409,32 @@
                 Facebook — Vkontakte — Instagram
             </p>
         </footer>
+
+                <!-- Initialize Swiper -->
+        <script>
+            // import Swiper from 'swiper';
+            // import 'swiper.scss'
+            // import 'swiper/css/navigation'
+            // import 'swiper/css/pagination'
+            var swiper = new Swiper('.image-slider', {
+                slidesPerView: 2,
+                slidesPerColumn: 1,
+                slidesPerColumnFill: "row",
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    // type: 'bullets',
+                    // clickable: true,
+                    // dynamicBullets: true,
+                    type: 'progressbar',
+                },
+
+                navigation: {
+                  prevEl: '.swiper-button-prev',
+                  nextEl: '.swiper-button-next' 
+                },
+            });
+        </script>
 
     </div>
 
