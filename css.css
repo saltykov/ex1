@@ -15,7 +15,7 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    background: rgb(218, 217, 210);
+    background: #FFFFFF;
     min-height: 200px;
     min-width: 0;
     align-items: center;  
@@ -53,6 +53,7 @@ ul{
 }
 li{
     float: left;
+    
 }
 li a {
     display: block;
@@ -60,6 +61,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    text-transform: uppercase;
   
     /* font-family: Pompadur; */
 font-size: 13px;
@@ -74,25 +76,50 @@ text-align: left;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-border: 1px solid red;
-/* font-family: Pompadur; */
+border: 1px solid #D1A954;
+
+
+/* identical to box height */
+text-align: center;
+/* Accent */
+
+}
+.golovna{
+    /* border: 1px solid #D1A954; */
+    letter-spacing: 0.05em;
+text-transform: uppercase;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
 font-size: 13px;
+line-height: 16px;
+color: #D1A954;
+}
+
+.SOFT_EVENT_HOUSE {
+width: 152px;
+height: 16px;
+left: 677px;
+top: 95px;
+/* display: inline-block; */
+
+font-family: 'Montserrat';
+font-style: normal;
 font-weight: 700;
+font-size: 13px;
 line-height: 16px;
 
-
-height: 29px;
-width: 88px;
-border-radius: 0px;
-border: 1px solid rgba(209, 169, 84, 0.9);
-text-align: center;
+/* identical to box height */
 letter-spacing: 0.05em;
 text-transform: uppercase;
+
+/* Accent */
+color: #D1A954;
+/* border:    1px solid #000000; */
+-webkit-text-stroke: 1px black;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.msecond{
-    border: 1px solid green;
-}
 .dropup{
     display: flex;
    flex-direction: column;
@@ -471,24 +498,26 @@ footer{
     justify-content: space-around;
 }
 
-.pro_restoran_info, .galery, .know_more, .our_instagram, .back_form, .swiper-container {
+.pro_restoran_info, .galery, .know_more, .our_instagram, .back_form {
     margin-top: 100px;
 }
 
-.swiper-container {
-    height: 650px;
-    width: 1740px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .swiper-wrapper{
 
-  } 
-  .image-slider_image{
+.swiper {
+    margin-top: 48.5px;
+    height: 750px;
+    width: 1740px;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  
+  .swiper-slide{
       text-align: center;
+      height: 650px;
+      width: 580px;
      
   }
-  .image-slider_image img{
+  .swiper-slide img{
       max-width: 100%;
      
   }
@@ -512,7 +541,7 @@ footer{
     -webkit-align-items: center;
     align-items: center;
   } */
-  .swiper-button-prev::after, .swiper-button-next::after {
+  /* .swiper-button-prev::after, .swiper-button-next::after {
       color: rgb(243, 235, 235);
       height: 30px;
       font-size: 14px;
@@ -527,4 +556,4 @@ footer{
     line-height: 20px;
     width: 30px;
     
-  }
+  } */
