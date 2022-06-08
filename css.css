@@ -121,14 +121,14 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .dropup{
-    display: flex;
-   flex-direction: column;
+    display: block;
+   /* flex-direction: column; */
  }
 
  #menu_btn{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: block;
+    /* flex-direction: column;
+    justify-content: space-around; */
     width: 50px;
     height: 20px;
     background: transparent ;
@@ -143,15 +143,15 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .menu_btn_content a{
-    display: flex;
+    display: block;
     /* position: relative; */
     /* height: auto; */
 }
 .dropup:hover 
 .menu_btn_content{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;   
+    display: block;
+    /* flex-direction: column; */
+    /* align-content: flex-end;    */
 }
 
 #menu_btn hr{
@@ -175,7 +175,7 @@ br{
     size: 2;
     color: #000;
 }
-
+/* ========================================================== */
 .pro_restoran{
     display: flex;
     flex-direction: column;
@@ -233,7 +233,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 border-radius: 0px;
-padding: 0 30px 0 0;
+margin: 0 125px 0 0;
 }
 
 .pro_restoran_info_left .logo{
@@ -250,7 +250,7 @@ h4{
     font-weight: 300;
     margin: 0;
 }
-
+/* tyt zminyty na flexu  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .pro_restoran_info_right{
     width: 50%;
     height: 100%;
@@ -275,6 +275,7 @@ h4{
         /* flex-direction: column; */
         align-items: center;
         border-radius: 0px;
+        margin-top: 53px;
     }
 
     .pro_restoran_info_right_item{
@@ -306,6 +307,7 @@ h4{
          height: 100%;    
     }
 
+    /* ============================================================== */
 .galery{
     display: flex;
     flex-direction: column;
@@ -379,7 +381,7 @@ height: 300px;
 margin: 15px ;
 margin: 15px ;
 }
-
+/* ================================================================== */
 .know_more{
     width: 1900px;
     height: 300px;
