@@ -580,10 +580,39 @@ footer{
   
     
   } */
-  .swiper-pagination{
+  /* .swiper-pagination{
     color: rgb(218, 27, 27);
     height: 30px;
     font-size: 14px;
     line-height: 20px;
     width: 30px;
-}
+} */
+
+
+.swiper-button-prev, .swiper-button-next{
+    top: 97%;
+     color: #000000;
+    size: 5px;
+    --swiper-navigation-size: 20px;
+    /*  
+    transform: matrix(0.71, 0.7, 0.71, -0.71, 0, 0); */
+    }
+    
+    .swiper-button-prev{
+          margin-left: 42%;
+         
+      }
+      .swiper-button-next{
+        margin-right: 42%;
+        
+    }
+    .swiper-pagination-bullet{
+    width: 20px;
+    height: 1px;
+    border-radius: 0%;
+    }
+    
+    .swiper-pagination-bullet-active{
+      background-color: #000;
+      }
+     
